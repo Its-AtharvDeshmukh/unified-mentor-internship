@@ -1,0 +1,50 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model State {
+  id               String         @id @default(cuid())
+  name             String         @unique
+  slug             String         @unique
+  type             String         
+  capital          String
+  region           String         
+  shortDescription String         @db.Text
+  description      String         @db.Text
+  heroImage        String
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+  touristPlaces    TouristPlace[]
+}
+
+model Category {
+  id            String         @id @default(cuid())
+  name          String         @unique 
+  slug          String         @unique
+  description   String?
+  touristPlaces TouristPlace[]
+}
+
+model TouristPlace {
+  id                     String         @id @default(cuid())
+  name                   String
+  slug                   String         @unique
+  stateId                String
+  cityId                 String?
+  categoryId             String
+  shortDescription       String         @db.Text
+  description            String         @db.Text
+  heroImage              String
+  featured               Boolean        @default(false)
+  verified               Boolean        @default(true)
+  createdAt              DateTime       @default(now())
+  updatedAt              DateTime       @updatedAt
+
+  state    State          @relation(fields: [stateId], references: [id])
+  category Category       @relation(fields: [categoryId], references: [id])
+}

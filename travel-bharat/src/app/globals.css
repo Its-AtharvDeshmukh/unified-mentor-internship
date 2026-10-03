@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-ivory: #F9F8F6;
+  --color-charcoal: #1A1A1A;
+  --color-charcoal-light: #2D2D2D;
+  --color-saffron: #F4C430;
+  --color-saffron-dark: #D4A820;
+  --color-terracotta: #E2725B;
+}
+
+:root {
+  --background: #FAF8F5;
+  --foreground: #1A1A1A;
+  --border: #E5E5E5;
+  --input: #E5E5E5;
+  --ring: #F4C430;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
