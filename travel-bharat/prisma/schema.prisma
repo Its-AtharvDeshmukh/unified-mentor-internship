@@ -3,48 +3,64 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 model State {
-  id               String         @id @default(cuid())
-  name             String         @unique
+  id               String         @id @default(uuid())
+  name             String
   slug             String         @unique
-  type             String         
+  type             String         @default("STATE")
   capital          String
-  region           String         
-  shortDescription String         @db.Text
-  description      String         @db.Text
+  region           String
+  shortDescription String
+  description      String
   heroImage        String
+  touristPlaces    TouristPlace[]
   createdAt        DateTime       @default(now())
   updatedAt        DateTime       @updatedAt
-  touristPlaces    TouristPlace[]
 }
 
 model Category {
-  id            String         @id @default(cuid())
-  name          String         @unique 
+  id            String         @id @default(uuid())
+  name          String
   slug          String         @unique
   description   String?
   touristPlaces TouristPlace[]
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
 }
 
 model TouristPlace {
-  id                     String         @id @default(cuid())
-  name                   String
-  slug                   String         @unique
-  stateId                String
-  cityId                 String?
-  categoryId             String
-  shortDescription       String         @db.Text
-  description            String         @db.Text
-  heroImage              String
-  featured               Boolean        @default(false)
-  verified               Boolean        @default(true)
-  createdAt              DateTime       @default(now())
-  updatedAt              DateTime       @updatedAt
+  id               String         @id @default(uuid())
+  name             String
+  slug             String         @unique
+  shortDescription String
+  description      String
+  heroImage        String
+  bestTimeToVisit  String?
+  entryFee         String?
+  openingTime      String?
+  closingTime      String?
+  address          String?
+  featured         Boolean        @default(false)
+  verified         Boolean        @default(true)
+  stateId          String
+  state            State          @relation(fields: [stateId], references: [id])
+  categoryId       String
+  category         Category       @relation(fields: [categoryId], references: [id])
+  gallery          GalleryImage[]
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+}
 
-  state    State          @relation(fields: [stateId], references: [id])
-  category Category       @relation(fields: [categoryId], references: [id])
+model GalleryImage {
+  id             String       @id @default(uuid())
+  url            String
+  caption        String?
+  touristPlaceId String
+  touristPlace   TouristPlace @relation(fields: [touristPlaceId], references: [id])
+  createdAt      DateTime     @default(now())
 }

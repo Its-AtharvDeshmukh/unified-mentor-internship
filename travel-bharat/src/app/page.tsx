@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Fraunces, Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
+import { UNESCOHeritage } from "@/components/home/UNESCOHeritage";
 import type { LucideIcon } from "lucide-react";
 import {
   ArrowRight,
@@ -271,7 +272,6 @@ const SOUNDSCAPES: SoundTrack[] = [
   { id: "munnar", title: "Rainforest Precipitation", locale: "Eravikulam Canopy", state: "Kerala", tag: "Tropical shola cloud-drip", icon: Waves, frequencies: [300, 450, 600] },
   { id: "thar", title: "Desert Dune Whispers", locale: "Sam Sand Dunes", state: "Rajasthan", tag: "Silica sand drifts", icon: Wind, frequencies: [150, 225, 300] },
 ];
-
 /* ───────────────────────── Shared bits ───────────────────────── */
 function SectionHead({
   kicker,
@@ -314,22 +314,19 @@ function Hero() {
   return (
     <section className="relative flex h-[96svh] min-h-[720px] flex-col px-3 pb-8 pt-6 sm:px-6 lg:px-12">
       <div className="relative flex flex-1 items-end overflow-hidden rounded-[2.5rem] p-6 shadow-[0_20px_50px_rgba(0,0,0,0.18)] sm:rounded-[3rem] sm:p-12 lg:p-16">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          poster="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=2000"
-          className="pointer-events-none absolute inset-0 h-full w-full scale-105 object-cover"
-        >
-          <source
-            src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-temple-in-india-42999-large.mp4"
-            type="video/mp4"
+        
+        {/* YOUTUBE BACKGROUND VIDEO INTEGRATION */}
+        <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none bg-black">
+          <iframe
+            src="https://www.youtube.com/embed/FOvOxeb2TCg?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&loop=1&playlist=FOvOxeb2TCg&modestbranding=1&playsinline=1"
+            allow="autoplay; encrypted-media"
+            className="absolute top-1/2 left-1/2 w-[300%] h-[300%] sm:w-[150vw] sm:h-[150vh] -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-85 object-cover"
+            style={{ border: 0 }}
           />
-        </video>
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/15" />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent" />
+        </div>
+        
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/60 via-black/10 to-transparent" />
 
         <div className="relative z-10 flex w-full flex-col gap-10">
           <div className="grid items-end gap-8 md:grid-cols-12">
@@ -399,45 +396,38 @@ function Atlas() {
         blurb="Explore 28 states and 8 union territories organized through an editorial geographic lens."
       />
 
-      <div className="grid auto-rows-[280px] grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-6">
-        {REGIONS.map((r) => (
-          <Link
-            key={r.name}
-            href="/states"
-            className={`group relative block overflow-hidden rounded-[2.5rem] border border-black/5 shadow-xl ${r.cls}`}
-          >
-            <Image
-              src={r.img}
-              alt={r.name}
-              fill
-              unoptimized
-              className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/10 to-black/80 transition-colors duration-700 group-hover:from-black/0" />
-
-            <span className="absolute right-5 top-5 flex h-11 w-11 items-center justify-center rounded-full border border-white/30 bg-white/15 text-white backdrop-blur-md transition-all duration-300 group-hover:bg-[#D35234] group-hover:border-[#D35234]">
-              <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </span>
-
-            <div className={`absolute bottom-0 left-0 right-0 ${r.big ? "p-8" : "p-6"}`}>
-              {r.meta && (
-                <span
-                  className={`mb-3 inline-block rounded-full bg-[#D35234] px-3 py-1 font-mono text-[10px] font-medium uppercase tracking-widest text-white shadow-md`}
-                >
-                  {r.meta}
-                </span>
-              )}
-              <h3
-                className={`font-serif font-light leading-tight text-white ${
-                  r.big ? "text-4xl lg:text-6xl" : "text-2xl lg:text-3xl"
-                }`}
-              >
-                {r.name}
-              </h3>
-            </div>
-          </Link>
-        ))}
+  
+<div className="grid auto-rows-[280px] grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-6">
+  {REGIONS.map((r) => (
+    <Link
+      key={r.name}
+      href={`/states?region=${encodeURIComponent(r.name)}`}
+      className={`group relative block overflow-hidden rounded-[2.5rem] border border-black/5 shadow-xl ${r.cls}`}
+    >
+      <Image
+        src={r.img}
+        alt={r.name}
+        fill
+        unoptimized
+        className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/10 to-black/80 transition-colors duration-700 group-hover:from-black/0" />
+      <span className="absolute right-5 top-5 flex h-11 w-11 items-center justify-center rounded-full border border-white/30 bg-white/15 text-white backdrop-blur-md transition-all duration-300 group-hover:bg-[#D35234] group-hover:border-[#D35234]">
+        <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+      </span>
+      <div className={`absolute bottom-0 left-0 right-0 ${r.big ? "p-8" : "p-6"}`}>
+        {r.meta && (
+          <span className="mb-3 inline-block rounded-full bg-[#D35234] px-3 py-1 font-mono text-[10px] font-medium uppercase tracking-widest text-white shadow-md">
+            {r.meta}
+          </span>
+        )}
+        <h3 className={`font-serif font-light leading-tight text-white ${r.big ? "text-4xl lg:text-6xl" : "text-2xl lg:text-3xl"}`}>
+          {r.name}
+        </h3>
       </div>
+    </Link>
+  ))}
+</div>
     </section>
   );
 }
@@ -554,6 +544,7 @@ function LivingHeritage() {
   );
 }
 
+
 /* ───────────────────────── 4. Cinema carousel ───────────────────────── */
 function CinemaCarousel() {
   const scroller = useRef<HTMLDivElement>(null);
@@ -562,6 +553,7 @@ function CinemaCarousel() {
   const [active, setActive] = useState(0);
   const n = SIGNATURE_VIDEOS.length;
 
+  // Play a clip only while its card is on screen
   useEffect(() => {
     const root = scroller.current;
     if (!root) return;
@@ -874,6 +866,7 @@ function Soundscapes() {
     filter.connect(master);
     master.connect(ctx.destination);
 
+    // Slow "breathing" LFO so the drone feels alive
     const lfo = ctx.createOscillator();
     const lfoDepth = ctx.createGain();
     lfo.frequency.value = 0.13;
@@ -996,6 +989,7 @@ function Climate() {
   return (
     <section id="seasons" className="relative mx-auto max-w-[1400px] px-6 py-24 lg:px-12">
       <div className="flex flex-col items-start gap-14 lg:flex-row lg:gap-20">
+        {/* Sticky intro */}
         <div className="space-y-6 lg:sticky lg:top-28 lg:w-1/3">
           <p className="inline-flex items-center gap-2 rounded-full border border-[#D35234]/25 bg-[#D35234]/10 px-4 py-1.5 font-mono text-[11px] font-medium uppercase tracking-[0.25em] text-[#D35234]">
             <Thermometer className="h-3.5 w-3.5" />
@@ -1036,6 +1030,7 @@ function Climate() {
           </p>
         </div>
 
+        {/* Stacked season cards */}
         <div className="w-full space-y-10 lg:w-2/3">
           {keys.map((k) => {
             const s = SEASONS[k];
@@ -1196,6 +1191,7 @@ export default function HomePage() {
       <Directory />
       <Soundscapes />
       <Climate />
+      <UNESCOHeritage />
       <Footer />
 
       <style

@@ -134,6 +134,8 @@ export function Navbar() {
                 Destinations
               </Link>
 
+              
+
               {/* State Matrix Dropdown */}
               <div className="relative">
                 <button
@@ -246,6 +248,11 @@ export function Navbar() {
               >
                 UNESCO
               </Link>
+
+              <Link href="/interactive-map" className={`px-5 py-2.5 text-[11px] uppercase tracking-[0.2em] font-bold rounded-full transition-colors ${isScrolled ? "text-[#1C1C1C]/70 hover:text-[#1C1C1C] hover:bg-[#F5F4F0]" : "text-white/80 hover:text-white hover:bg-white/10"}`}>
+  Interactive Map
+</Link>
+
             </nav>
 
             {/* 3. RIGHT CONTROLS & SEARCH (Right) */}
