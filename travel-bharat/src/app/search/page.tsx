@@ -54,7 +54,6 @@ export default async function SearchResultsPage({
                 key={place.id}
                 title={place.name}
                 slug={place.slug}
-                location={`${place.state.name}`}
                 imageUrl={place.heroImage}
                 category={place.category.name}
               />
