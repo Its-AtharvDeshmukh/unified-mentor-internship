@@ -1,0 +1,24 @@
+SILENT SOS — START HERE
+
+1. Extract the ZIP file.
+2. Open the extracted silent-sos-app folder in VS Code.
+3. Open Terminal in VS Code and confirm you are in the folder containing package.json.
+4. Run these commands one at a time:
+
+   npm install
+   cp .env.example .env
+   npm run db:push
+   npm run db:seed
+   npm run dev
+
+5. Open http://localhost:3000 in your browser.
+
+Before running tests/type checks, you can also run:
+   npm test
+   npm run typecheck
+
+NOTES:
+- The app defaults to sandbox notification mode. It will not send real SMS/email by default.
+- This is an educational internship project, not a certified emergency service.
+- Keep .env and real provider secrets private.
+- Browser GPS requires permission and cannot be guaranteed to keep running in a background/closed tab.
