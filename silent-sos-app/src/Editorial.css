@@ -1,0 +1,485 @@
+/* Impeccable reference study: clear type, neutral planes and deliberate emphasis. */
+:root {
+  --haven-paper: #f6f7f8;
+  --haven-surface: #fff;
+  --haven-ink: #1b1e24;
+  --haven-coral: #e87a5e;
+  --haven-muted: #6d7179;
+  --haven-line: #e1e4e8;
+  --haven-soft: #f7ebe5;
+  --haven-accent-text: #a35542;
+  --ov-ink: #1b1e24;
+  --ov-muted: #6d7179;
+  --ov-line: #e1e4e8;
+}
+.main-shell:before {
+  background: none;
+}
+.topbar {
+  background: #f6f7f8ed;
+  border-bottom: 1px solid #e1e4e8;
+}
+.main-content {
+  padding-top: 40px;
+}
+.page-heading h1,
+.practical-heading h1 {
+  font-weight: 500;
+  letter-spacing: -1.8px;
+  color: #1b1e24;
+}
+.page-heading p,
+.practical-heading p {
+  color: #6d7179;
+}
+.practical-heading > .outline-button {
+  background: #fff;
+  border-color: #dde0e5;
+}
+.practical-heading .ov-eyebrow {
+  color: #838790;
+  letter-spacing: 1.5px;
+}
+.practical-overview {
+  gap: 26px;
+}
+.card,
+.modal,
+.practical-overview .cw-card,
+.live-position-panel,
+.position-map-card {
+  border-radius: 12px;
+  border-color: #e1e4e8;
+  box-shadow: none;
+  background: #fff;
+}
+.card:hover {
+  border-color: #cad0d8;
+}
+.padded-card {
+  padding: 29px;
+}
+.info-banner,
+.studio-disclosure,
+.research-note {
+  background: #eff1f3;
+  border-color: #e0e4e8;
+  border-radius: 9px;
+}
+.outline-button,
+.small-button {
+  border-color: #dce0e5;
+  background: #fff;
+}
+.primary-button {
+  background: #1b1e24;
+  border-color: #1b1e24;
+  border-radius: 8px;
+}
+.primary-button:hover {
+  background: #353a43;
+  border-color: #353a43;
+}
+.section-toolbar {
+  margin-top: 30px;
+}
+.section-toolbar h2 {
+  font-size: 21px;
+  letter-spacing: -0.5px;
+}
+.form-grid input,
+.form-grid select {
+  background: #fff;
+  border-color: #dfe3e8;
+}
+.filter-tabs {
+  background: #edf0f3;
+  border-color: #e0e4e8;
+  border-radius: 9px;
+}
+.filter-tabs button.selected {
+  background: #1b1e24;
+}
+.settings-grid {
+  gap: 24px;
+}
+.person-card {
+  border-radius: 14px;
+}
+.person-card .person-top > .pill {
+  border-radius: 5px;
+}
+.practical-overview .cw-card-top {
+  padding-top: 19px;
+  min-height: 34px;
+}
+.practical-overview .cw-card-top > .cw-section-index {
+  display: none;
+}
+.practical-overview .cw-status {
+  margin-left: auto;
+}
+.practical-overview .cw-title-row {
+  padding-top: 12px;
+  padding-bottom: 22px;
+}
+.practical-overview .cw-title-row h3,
+.practical-overview .cw-circle .cw-title-row h3 {
+  font-size: 23px;
+  letter-spacing: -0.8px;
+}
+.practical-overview .cw-circle .cw-card-top {
+  position: absolute;
+  right: 25px;
+  top: 14px;
+  padding: 0;
+  min-height: 0;
+}
+.practical-overview .cw-circle .cw-title-row {
+  padding-top: 28px;
+}
+.practical-overview .cw-circle .cw-circle-count {
+  font-size: 20px;
+  color: #9197a0;
+  letter-spacing: 0;
+}
+.practical-overview .cw-circle {
+  position: relative;
+}
+.practical-overview .cw-circle .cw-circle-intro {
+  padding-top: 0;
+}
+.practical-overview .cw-card-bottom-link,
+.practical-overview .cw-card-footer-link {
+  background: #f6f7f8;
+  border-color: #e1e4e8;
+  color: #525964;
+}
+.practical-overview .cw-activity .cw-card-top {
+  display: none;
+}
+.practical-overview .cw-activity .cw-title-row {
+  padding-top: 26px;
+}
+.practical-overview .cw-privacy {
+  background: #fff;
+  border-color: #e1e4e8;
+  border-radius: 12px;
+}
+.practical-overview .cw-privacy .cw-section-index {
+  color: #858b94;
+}
+.practical-overview .cw-privacy-title > span {
+  background: #f5eee8;
+}
+.practical-overview .cw-circle .cw-add-contact {
+  background: #fff;
+  border-color: #d9dee4;
+  border-style: solid;
+  color: #575f69;
+}
+.practical-overview .cw-circle .cw-add-contact:hover {
+  background: #f5f7f9;
+}
+.safety-action-bar {
+  background: #fff;
+  border-color: #dfe3e8;
+  border-radius: 12px;
+  padding: 15px 27px 15px 25px;
+  min-height: 185px;
+  box-shadow: none;
+  gap: 18px;
+}
+.safety-bar-symbol {
+  background: #f9e9df;
+  color: #b87558;
+  width: 46px;
+  height: 50px;
+  border-radius: 13px;
+}
+.safety-bar-title h2 {
+  font-size: 24px;
+  letter-spacing: -0.8px;
+  color: #1b1e24;
+}
+.safety-bar-title > span {
+  background: #f6f0e9;
+  border-color: #e7ddd1;
+  color: #987c65;
+}
+.safety-action-bar p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #616874;
+  max-width: 490px;
+}
+.safety-action-bar small {
+  color: #8a8f98;
+  font-size: 11px;
+  margin-top: 8px;
+}
+.safety-action-bar > .safety-action-control {
+  flex: 0 0 178px;
+  min-width: 0;
+}
+.safety-action-control .signal-stage {
+  min-height: 155px;
+  width: 178px;
+  margin: 0;
+}
+.safety-action-control .signal-stage-label,
+.safety-action-control .signal-stage-caption,
+.safety-action-control .signal-float-chip,
+.safety-action-control .signal-orbital-star,
+.safety-action-control .signal-orbital-plus,
+.safety-action-control .signal-stage-grid {
+  display: none;
+}
+.safety-action-control .signal-stage:before {
+  background: radial-gradient(ellipse, #edb39422, transparent 70%);
+}
+.safety-action-control .signal-button-holder,
+.safety-action-control .signal-physical-button {
+  width: 110px;
+  height: 110px;
+  top: 48%;
+}
+.safety-action-control .signal-physical-button {
+  top: auto;
+}
+.safety-action-control .signal-button-plinth {
+  width: 136px;
+  height: 136px;
+  top: 48%;
+  box-shadow:
+    0 4px 0 #e8cbb7,
+    0 8px 12px #9f6e5219;
+}
+.safety-action-control .signal-track {
+  width: 158px;
+  height: 158px;
+  top: 48%;
+  border-color: #dfd4ca80;
+}
+.safety-action-control .signal-track.track-inner {
+  width: 144px;
+  height: 144px;
+}
+.safety-action-control .signal-button-surface > strong {
+  font-size: 29px;
+  letter-spacing: -1.4px;
+}
+.safety-action-control .signal-button-surface > svg {
+  width: 22px;
+  height: 22px;
+  margin: 0;
+}
+.safety-action-control .signal-button-surface > span {
+  font-size: 8px;
+  margin-top: 2px;
+}
+.safety-action-control .signal-physical-button:hover .signal-button-surface {
+  transform: translateY(-4px) scale(1.07);
+  transition:
+    transform 0.55s cubic-bezier(0.2, 1.7, 0.3, 1),
+    filter 0.2s;
+}
+.safety-action-control .signal-physical-button:active .signal-button-surface {
+  transform: translateY(4px) scale(0.96);
+  transition: transform 0.12s ease-out;
+}
+.signal-button-shadow {
+  display: none;
+}
+.navigation-panel {
+  background: #fff;
+  border-right: 1px solid #e0e4e8;
+}
+.workspace-switch {
+  background: #f4f5f7;
+  border-color: #e6e8eb;
+}
+.workspace-switch:hover {
+  background: #eceff2;
+}
+.navigation-link {
+  color: #767b84;
+  border-radius: 8px;
+}
+.navigation-link:hover {
+  background: #f4f5f7;
+  color: #2b3038;
+}
+.navigation-link.is-current {
+  background: #1b1e24;
+  color: #fff;
+  box-shadow: none;
+}
+.navigation-section-label {
+  color: #9298a1;
+}
+.navigation-index {
+  color: #a8adb5;
+}
+.navigation-badge {
+  background: #f0f2f5;
+  border-color: #e1e5e9;
+  color: #7d838e;
+}
+.navigation-help {
+  color: #707681;
+}
+.navigation-help small {
+  color: #9299a3;
+}
+.help-circle {
+  background: #f3f4f6;
+  border-color: #e2e5e9;
+  color: #7e8793;
+}
+.navigation-signoff {
+  border-color: #e5e8ec;
+  color: #a2a7ae;
+}
+.navigation-collapse {
+  border-color: #dfe3e8;
+  background: #fff;
+  color: #6c7580;
+  border-radius: 7px;
+}
+.navigation-panel.is-collapsed .workspace-switch {
+  background: #f1f3f6;
+}
+.navigation-panel.is-collapsed .navigation-link:hover {
+  background: #f4f5f7;
+}
+.navigation-panel.is-collapsed .navigation-link.is-current {
+  background: #1b1e24;
+}
+.navigation-panel.is-collapsed .help-circle {
+  background: #f3f4f6;
+}
+.navigation-logo small {
+  color: #969ca5;
+}
+.topbar-title,
+.header-breadcrumb {
+  color: #8d949e;
+}
+.quiet-button {
+  background: #fff;
+  border-color: #e0e4e8;
+  color: #666f7c;
+}
+.mobile-bottom-navigation {
+  background: #1b1e24;
+}
+.auth-page {
+  background: #f7f4ed;
+}
+.auth-story {
+  background: #222638;
+}
+.auth-form-wrap .primary-button {
+  background: #222638;
+}
+.auth-tabs button.selected {
+  background: #222638;
+}
+.auth-form-wrap .form-grid input {
+  background: #fffdfa;
+  border-color: #e4dfd8;
+}
+@media (max-width: 1080px) {
+  .safety-action-bar p {
+    font-size: 13px;
+  }
+  .safety-action-bar > .safety-action-control {
+    flex-basis: 158px;
+  }
+  .safety-action-control .signal-stage {
+    width: 158px;
+  }
+}
+@media (max-width: 720px) {
+  .main-content {
+    padding-top: 27px;
+  }
+  .practical-overview {
+    gap: 20px;
+  }
+  .safety-action-bar {
+    padding: 20px;
+    align-items: center;
+    gap: 10px 15px;
+    min-height: 0;
+  }
+  .safety-bar-symbol {
+    width: 38px;
+    height: 42px;
+  }
+  .safety-action-bar > div:not(.safety-action-control) {
+    min-width: 190px;
+  }
+  .safety-bar-title h2 {
+    font-size: 22px;
+  }
+  .safety-action-bar p {
+    font-size: 12px;
+  }
+  .safety-action-bar small {
+    font-size: 10px;
+    line-height: 1.7;
+  }
+  .safety-action-bar > .safety-action-control {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .safety-action-control .signal-stage {
+    width: 230px;
+    min-height: 170px;
+  }
+  .safety-action-control .signal-button-holder,
+  .safety-action-control .signal-physical-button {
+    width: 120px;
+    height: 120px;
+  }
+  .safety-action-control .signal-button-plinth {
+    width: 145px;
+    height: 145px;
+  }
+  .safety-action-control .signal-track {
+    width: 172px;
+    height: 172px;
+  }
+  .safety-action-control .signal-track.track-inner {
+    width: 160px;
+    height: 160px;
+  }
+  .safety-action-control .signal-button-surface > strong {
+    font-size: 32px;
+  }
+  .safety-action-control .signal-button-surface > span {
+    font-size: 9px;
+  }
+  .practical-overview .cw-title-row h3 {
+    font-size: 22px;
+  }
+  .practical-heading h1 {
+    font-size: 34px;
+  }
+  .navigation-panel {
+    border-radius: 15px;
+  }
+  .practical-overview .cw-circle .cw-circle-count {
+    font-size: 20px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .safety-action-control .signal-physical-button:hover .signal-button-surface,
+  .safety-action-control .signal-physical-button:active .signal-button-surface {
+    transform: none;
+    transition: none;
+  }
+}

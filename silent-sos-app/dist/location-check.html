@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Haven — Direct device location test</title>
+    <style>
+      body {
+        margin: 0;
+        background: #f8f6f1;
+        color: #343346;
+        font:
+          15px/1.7 system-ui,
+          sans-serif;
+      }
+      main {
+        max-width: 720px;
+        margin: 50px auto;
+        padding: 25px;
+      }
+      h1 {
+        font-size: 32px;
+        line-height: 1.2;
+        letter-spacing: -1px;
+      }
+      p {
+        color: #7c7787;
+      }
+      section {
+        background: #fff;
+        border: 1px solid #e4dfea;
+        border-radius: 16px;
+        padding: 25px;
+        margin: 25px 0;
+      }
+      button {
+        font: inherit;
+        cursor: pointer;
+        background: #30354d;
+        color: #fff;
+        border: 0;
+        border-radius: 8px;
+        padding: 13px 19px;
+        margin: 7px 10px 7px 0;
+      }
+      button.secondary {
+        background: #eee8f3;
+        color: #9583a2;
+      }
+      pre {
+        font:
+          12px/1.8 ui-monospace,
+          monospace;
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+        color: #81738f;
+        background: #f5eff9;
+        border-radius: 8px;
+        padding: 15px;
+      }
+      #coordinates {
+        font-size: 22px;
+        line-height: 1.6;
+        color: #9275a5;
+        overflow-wrap: anywhere;
+      }
+      small {
+        color: #b2a5bc;
+      }
+      a {
+        color: #9275a5;
+      }
+      label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        color: #9b8ba8;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a href="/#location">← Back to Haven</a>
+      <h1>Direct device location test.</h1>
+      <p>
+        This page calls the browser’s Geolocation API directly. It uses no
+        React, map library, server lookup, IP estimate, or saved coordinates. A
+        successful result therefore confirms that this browser can supply a real
+        device position.
+      </p>
+      <section>
+        <label
+          ><input id="accuracy" type="checkbox" checked />Request high
+          accuracy</label
+        ><button id="start">Request current location</button
+        ><button id="stop" class="secondary">Stop watch</button>
+        <p id="status" role="status">Not started.</p>
+        <div id="coordinates">No device coordinates received.</div>
+        <small id="fix"></small>
+      </section>
+      <section>
+        <strong>Browser trace</strong>
+        <pre id="trace"></pre>
+      </section>
+      <p>
+        If this direct test does not show a permission prompt or receive a
+        position, the failure is outside the map/UI. Allow Location Services for
+        the browser/app in macOS settings and allow this site. You can open this
+        exact URL in Safari or Chrome to test a full browser.
+      </p>
+      <small
+        >Coordinates stay on this test page. No map tiles or location services
+        receive them.</small
+      >
+    </main>
+    <script>
+      let watch = null,
+        count = 0;
+      const trace = document.querySelector("#trace"),
+        status = document.querySelector("#status");
+      const log = (text) => {
+        trace.textContent +=
+          new Date().toLocaleTimeString() + "  " + text + "\n";
+      };
+      log("Secure context: " + isSecureContext);
+      log("Geolocation API: " + !!navigator.geolocation);
+      log("Embedded frame: " + (self !== top));
+      log("Browser: " + navigator.userAgent);
+      const policy = document.permissionsPolicy || document.featurePolicy;
+      log(
+        "Page policy: " +
+          (policy?.allowsFeature?.("geolocation") ?? "Not reported"),
+      );
+      navigator.permissions
+        ?.query({ name: "geolocation" })
+        .then((p) => {
+          log("Permissions API report: " + p.state);
+          p.onchange = () => log("Permission report changed: " + p.state);
+        })
+        .catch(() => log("Permissions API unavailable"));
+      document.querySelector("#start").onclick = () => {
+        if (watch !== null) navigator.geolocation.clearWatch(watch);
+        if (!navigator.geolocation) {
+          status.textContent = "This browser exposes no location API.";
+          return;
+        }
+        count = 0;
+        status.textContent =
+          "Requesting one native location watch. Allow location if a prompt appears.";
+        log("watchPosition requested from a click");
+        try {
+          watch = navigator.geolocation.watchPosition(
+            (p) => {
+              count++;
+              status.textContent = "LIVE — native device callback received";
+              document.querySelector("#coordinates").textContent =
+                p.coords.latitude.toFixed(7) +
+                "°, " +
+                p.coords.longitude.toFixed(7) +
+                "°";
+              document.querySelector("#fix").textContent =
+                "Reported accuracy ±" +
+                Math.round(p.coords.accuracy) +
+                " m · Fix " +
+                count +
+                " · " +
+                new Date(p.timestamp).toLocaleTimeString();
+              log(
+                "SUCCESS callback " +
+                  count +
+                  "; device accuracy " +
+                  p.coords.accuracy +
+                  " m",
+              );
+            },
+            (e) => {
+              status.textContent =
+                "Native API error " + e.code + ": " + e.message;
+              log("ERROR code=" + e.code + " message=" + e.message);
+            },
+            {
+              enableHighAccuracy: document.querySelector("#accuracy").checked,
+              maximumAge: 0,
+              timeout: 30000,
+            },
+          );
+          log("Native watch registered. No custom timeout or second request.");
+        } catch (e) {
+          status.textContent = e.name + ": " + e.message;
+          log("Thrown " + e.name + ": " + e.message);
+        }
+      };
+      document.querySelector("#stop").onclick = () => {
+        if (watch !== null) navigator.geolocation.clearWatch(watch);
+        watch = null;
+        status.textContent = "Location watch stopped.";
+        log("Watch cleared by user");
+      };
+      window.addEventListener("pagehide", () => {
+        if (watch !== null) navigator.geolocation.clearWatch(watch);
+      });
+    </script>
+  </body>
+</html>
