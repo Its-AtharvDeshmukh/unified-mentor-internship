@@ -1,736 +1,370 @@
+```markdown
 <div align="center">
 
-# 🚀 UNIFIED MENTOR INTERNSHIP
-
-### 🇮🇳 Building Real-World Digital Experiences
-
-<p>
-  <strong>A Six-Month journey of building, learning, experimenting, and shipping.</strong>
-</p>
+<!-- Animated Header Banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,18,24&height=230&section=header&text=🚀%20UNIFIED%20MENTOR%20INTERNSHIP&fontSize=42&animation=fadeIn&fontAlignY=38&desc=🇮🇳%20Building%20Real-World%20Digital%20Experiences&descSize=20&descAlignY=62" width="100%" alt="Unified Mentor Internship Banner" />
 
 <br/>
 
-## 🌏 TravelBharat
-
-### <i>Explore India. One State. Countless Stories.</i>
+### 🌟 *A Six-Month Immersive Journey of Building, Learning, Experimenting & Shipping*
 
 <br/>
 
-<img src="travel-bharat/assets/travelbharat-banner.gif" width="100%" alt="TravelBharat">
+<!-- Featured Banner Container -->
+<a href="#-project-01-%E2%80%94-travelbharat">
+  <img src="travel-bharat/assets/travelbharat-banner.gif" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);" alt="TravelBharat Banner">
+</a>
 
-<br/>
-<br/>
+<br/><br/>
 
-[![Project](https://img.shields.io/badge/Project-01-FF9933?style=for-the-badge)](#)
-[![Status](https://img.shields.io/badge/Status-In%20Development-22C55E?style=for-the-badge)](#)
-[![Internship](https://img.shields.io/badge/Unified%20Mentor-Internship-6366F1?style=for-the-badge)](#)
-[![Next.js](https://img.shields.io/badge/Next.js-React-000000?style=for-the-badge&logo=nextdotjs)](#)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](#)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](#)
+<!-- Animated & Interactive Shields Badge Wall -->
+[![Project](https://img.shields.io/badge/Project_01-TravelBharat-FF9933?style=for-the-badge&logo=compass&logoColor=white)](#-project-01-%E2%80%94-travelbharat)
+[![Status](https://img.shields.io/badge/Status-🟢_In_Development-22C55E?style=for-the-badge)](#-project-progress)
+[![Internship](https://img.shields.io/badge/Unified_Mentor-6--Month_Internship-6366F1?style=for-the-badge&logo=workspace)](#-internship-roadmap)
+<br/>
+[![Next.js](https://img.shields.io/badge/Next.js-14+-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](#-technology-stack)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](#-technology-stack)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4+-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](#-technology-stack)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16+-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](#-technology-stack)
+[![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](#-technology-stack)
 
 </div>
 
----
+<img src="https://user-images.githubusercontent.com/73097560/115834477-db03ce80-a525-11eb-88a6-977258c2d490.gif" width="100%" />
 
-# ✨ Welcome to My Internship Journey
+## ✨ Welcome to My Internship Journey
 
-This repository contains the projects I am developing during my **six-month virtual internship at Unified Mentor**.
+This repository houses the suite of production-grade digital products developed during my **6-Month Virtual Engineering Internship at Unified Mentor**.
 
-The goal is simple:
+> 🎯 **Core Mandate:** *Learn by building real-world, high-impact software products.*
 
-> **Learn by building real-world products.**
+Rather than constructing isolated mini-apps or tutorial clones, this program emphasizes building end-to-end scalable platforms encompassing:
 
-Instead of creating small tutorial projects, this internship focuses on developing complete applications involving:
-
-- 🎨 Product design
-- 💻 Frontend engineering
-- ⚙️ Backend development
-- 🗄️ Database architecture
-- 🔐 Authentication
-- 🔎 Search & discovery
-- 📱 Responsive experiences
-- ⚡ Performance optimization
-- 🔍 SEO
-- 🧪 Testing
-- 🚀 Deployment
+| Area | Focus Highlights |
+| :--- | :--- |
+| 🎨 **Product & UI/UX Design** | Design systems, accessibility (a11y), responsive layouts, motion UI |
+| 💻 **Frontend Engineering** | Next.js App Router, SSR/SSG, TypeScript, state management |
+| ⚙️ **Backend & APIs** | RESTful endpoints, serverless functions, middleware, validation |
+| 🗄️ **Database Architecture** | Relational schemas, Prisma ORM, migrations, query optimization |
+| 🔐 **Security & Auth** | Hashed credentials, session tokens, role-based access control (RBAC) |
+| ⚡ **Performance & SEO** | Core Web Vitals, dynamic meta tags, automated sitemaps, lazy loading |
 
 ---
 
-# 🗺️ Internship Roadmap
+## 🗺️ Internship Roadmap
 
 ```text
-                    UNIFIED MENTOR
-                         │
-                         ▼
-              ┌─────────────────────┐
-              │   6 MONTH JOURNEY   │
-              └──────────┬──────────┘
-                         │
-        ┌────────────────┼────────────────┐
-        ▼                ▼                ▼
-   PROJECT 01       PROJECT 02       PROJECT 03
-  TravelBharat       Coming Soon       Coming Soon
-        │
-        ▼
-   PROJECT 04
+                       💼 UNIFIED MENTOR INTERNSHIP
+                                   │
+                                   ▼
+                       ┌───────────────────────┐
+                       │   6-MONTH EXPEDITION  │
+                       └───────────┬───────────┘
+                                   │
+         ┌─────────────────────────┼─────────────────────────┐
+         ▼                         ▼                         ▼
+  📦 PROJECT 01             🚀 PROJECT 02             🔮 PROJECT 03
+  TravelBharat               Coming Soon               Coming Soon
+         │
+         ▼
+  🔮 PROJECT 04
    Coming Soon
+
 ```
 
 ### 📌 Project Progress
 
-| Project | Name | Status |
-|---|---|---|
-| 🇮🇳 Project 01 | **TravelBharat** | 🟢 In Development |
-| 🚀 Project 02 | Coming Soon | ⚪ Planned |
-| 🚀 Project 03 | Coming Soon | ⚪ Planned |
-| 🚀 Project 04 | Coming Soon | ⚪ Planned |
-
----
+| ID | Project Name | Tech Stack | Status | Completion |
+| --- | --- | --- | --- | --- |
+| **01** | 🇮🇳 **TravelBharat** | `Next.js` `TypeScript` `PostgreSQL` `Prisma` | 🟢 In Development | `██████░░░░ 60%` |
+| **02** | 🚀 Project 02 | `TBD` | ⚪ Planned | `░░░░░░░░░░ 0%` |
+| **03** | 🚀 Project 03 | `TBD` | ⚪ Planned | `░░░░░░░░░░ 0%` |
+| **04** | 🚀 Project 04 | `TBD` | ⚪ Planned | `░░░░░░░░░░ 0%` |
 
 # 🇮🇳 PROJECT 01 — TRAVELBHARAT
 
-## 🌏 Explore India. One State. Countless Stories.
+### 🌏 *Explore India. One State. Countless Stories.*
 
-**TravelBharat** is a modern tourism discovery platform designed to make exploring India easier, more visual, and more engaging.
-
-The platform brings together:
-
-> **States + Cities + Destinations + Culture + Heritage + Nature + Experiences**
-
-into one structured digital travel experience.
-
----
-
-# 🎯 The Problem
-
-Tourism information across India is often scattered across multiple websites and platforms.
-
-Travelers may need to search through different sources to find:
-
-- 📍 Tourist destinations
-- 🏛️ Historical places
-- 🌿 Natural attractions
-- 🛕 Religious destinations
-- 🧗 Adventure experiences
-- 🗺️ Locations
-- 🕐 Visiting information
-- 📸 Destination images
-
-### TravelBharat aims to simplify this.
-
-Instead of searching everywhere:
+**TravelBharat** is an immersive tourism discovery ecosystem built to transform how travelers explore India's rich cultural, historical, and natural heritage.
 
 ```text
-Search
-   ↓
-Multiple Websites
-   ↓
-Scattered Information
-   ↓
-Confusion
-   ↓
-Lost Time
-```
+ 🏛️ Heritage  +  🌿 Nature  +  🧗 Adventure  +  🛕 Spirituality  +  🎭 Culture
+ └──────────────────────────────────────┬──────────────────────────────────────┘
+                                        ▼
+                   🌟 Unified Travel Discovery Engine
 
-TravelBharat creates:
-
-```text
-                 TRAVELBHARAT
-                      │
-          ┌───────────┼───────────┐
-          ▼           ▼           ▼
-       States       Cities    Destinations
-          │           │           │
-          └───────────┼───────────┘
-                      ▼
-                Travel Discovery
 ```
 
 ---
 
-# 💡 What TravelBharat Provides
+## 🎯 The Problem & Solution
 
-### 🗺️ Explore India
-
-Discover Indian states and union territories through an intuitive exploration experience.
-
-### 📍 Discover Destinations
-
-Browse tourist destinations organized by:
-
-- State
-- City
-- Region
-- Category
-
-### 🔎 Smart Search
-
-Search for:
-
-- Places
-- Cities
-- States
-- Categories
-
-### 🏷️ Explore by Category
-
-| Category | Experience |
-|---|---|
-| 🏛️ Heritage | Historical & architectural destinations |
-| 🌿 Nature | Mountains, beaches, forests & landscapes |
-| 🧗 Adventure | Outdoor and adventure experiences |
-| 🛕 Religious | Spiritual and cultural destinations |
-
-### 📖 Destination Stories
-
-Every destination can provide:
-
-- Overview
-- Description
-- Historical significance
-- Best time to visit
-- Opening hours
-- Entry information
-- Location
-- Nearby attractions
-
-### 🖼️ Visual Gallery
-
-Explore destinations through immersive photography and galleries.
-
-### 🛠️ Admin Dashboard
-
-Content managers can manage:
-
-- Destinations
-- States
-- Cities
-- Categories
-- Verification
-- Featured destinations
-
----
-
-# 🧠 Core User Experience
+### ❌ Traditional Travel Discovery (Fragmented Flow)
 
 ```text
-             👤 USER
-                │
-                ▼
-        ┌─────────────────┐
-        │    HOMEPAGE     │
-        └────────┬────────┘
-                 │
-        ┌────────┼────────┐
-        ▼        ▼        ▼
-      STATES  SEARCH  CATEGORIES
-        │        │        │
-        └────────┼────────┘
-                 ▼
-          DESTINATION LIST
-                 │
-                 ▼
-        DESTINATION DETAILS
-                 │
-       ┌─────────┼─────────┐
-       ▼         ▼         ▼
-    Gallery   Information  Map
-       │         │         │
-       └─────────┼─────────┘
-                 ▼
-          RELATED PLACES
+ 🔍 Search  ──►  🌐 10+ Scattered Sites  ──►  🧩 Disjointed Data  ──►  😵 Confusion & Lost Time
+
+```
+
+### ✅ TravelBharat Ecosystem (Unified Architecture)
+
+```text
+                                  🌐 TRAVELBHARAT
+                                         │
+                 ┌───────────────────────┼───────────────────────┐
+                 ▼                       ▼                       ▼
+          🏛️ States & UTs           🏙️ Cities & Hubs       📍 Destinations
+                 │                       │                       │
+                 └───────────────────────┼───────────────────────┘
+                                         ▼
+                             🎯 Seamless Discovery Hub
+
 ```
 
 ---
 
-# 🎨 Design Philosophy
+## 💡 Key Product Capabilities
 
-TravelBharat is being developed as a **premium digital travel experience**, rather than a basic CRUD application.
+### 🛠️ Admin Dashboard Portal
 
-The interface focuses on:
+* 📍 **Destination Control:** Create, update, publish, or remove destination entries.
+* 🇮🇳 **Territory Management:** Organize states, cities, and regional hierarchies.
+* 🏷️ **Taxonomy Engine:** Manage custom categories and promotional tags.
+* 🌟 **Curated Highlights:** Feature trending destinations on the global homepage.
+* 🛡️ **Verification Pipeline:** Moderate content before live deployment.
 
-- ✨ Editorial storytelling
-- 🖼️ Strong visual imagery
-- 🎯 Clear information hierarchy
-- 🧭 Intuitive navigation
-- 📱 Mobile-first responsiveness
-- ⚡ Smooth interactions
-- 🎬 Meaningful animations
-- ♿ Accessibility
-- 🚀 Performance
+---
 
-### Visual Direction
+## 🧠 Core User Experience Flow
 
 ```text
-        🇮🇳 INDIAN CULTURE
-               │
-               ▼
-       ┌─────────────────┐
-       │  TRAVELBHARAT   │
-       └─────────────────┘
-               │
-      ┌────────┼────────┐
-      ▼        ▼        ▼
-    Modern   Editorial  Premium
-      │        │        │
-      └────────┼────────┘
-               ▼
-        Digital India
-        Travel Experience
+                            👤 TRAVELER
+                                │
+                                ▼
+                       ┌────────────────┐
+                       │   🏡 HOMEPAGE  │
+                       └───────┬────────┘
+                               │
+         ┌─────────────────────┼─────────────────────┐
+         ▼                     ▼                     ▼
+  🗺️ STATE EXPLORER       🔍 SMART SEARCH      🏷️ CATEGORIES
+         │                     │                     │
+         └─────────────────────┼─────────────────────┘
+                               │
+                               ▼
+                   📍 DESTINATION DIRECTORY
+                               │
+                               ▼
+                   📖 DESTINATION DETAILS PAGE
+                               │
+         ┌─────────────────────┼─────────────────────┐
+         ▼                     ▼                     ▼
+  🖼️ Visual Gallery    ℹ️ Travel Info & Tips   🗺️ Interactive Map
+         │                     │                     │
+         └─────────────────────┼─────────────────────┘
+                               │
+                               ▼
+                     ✨ RECOMMENDED PLACES
+
 ```
 
 ---
 
-# ⚡ Key Features
+## 🎨 Design Philosophy & UX Architecture
 
-## 🏠 Homepage
-
-- Cinematic hero section
-- Destination discovery
-- India exploration
-- Featured destinations
-- Category exploration
-- Hidden gems
-- Regional exploration
-- Travel inspiration
-- Seasonal discovery
-- Editorial content
-
----
-
-## 🇮🇳 State Explorer
-
-Explore:
-
-- States
-- Union Territories
-- Regions
-- Capitals
-- Destination highlights
-
----
-
-## 📍 Destination Discovery
-
-Filter destinations using:
+TravelBharat is built around an **editorial-first visual layout** designed to give users a luxury magazine-like feel without sacrificing speed.
 
 ```text
-State
-  ↓
-City
-  ↓
-Category
-  ↓
-Destination
+                        🇮🇳 RICH INDIAN HERITAGE
+                                   │
+                                   ▼
+                       ┌───────────────────────┐
+                       │   TRAVELBHARAT CORE   │
+                       └───────────┬───────────┘
+                                   │
+         ┌─────────────────────────┼─────────────────────────┐
+         ▼                         ▼                         ▼
+  🎨 Editorial Visuals      ⚡ Fluid Motion          📱 Mobile-First
+  High-res galleries,       Smooth transitions,       Touch-friendly UX,
+  curated typography       micro-animations          blazing fast load
+
 ```
 
 ---
 
-## 🔎 Search
-
-Search across:
-
-- Destinations
-- States
-- Cities
-- Categories
-
----
-
-## 🖼️ Destination Gallery
-
-Interactive destination galleries with:
-
-- High-quality imagery
-- Image previews
-- Lightbox experience
-- Responsive layouts
-- Optimized loading
-
----
-
-## 🗺️ Location Discovery
-
-Destination pages can provide:
-
-- Location
-- Address
-- Coordinates
-- Map information
-- External map navigation
-
----
-
-# 🛠️ Admin Dashboard
-
-The admin system allows authorized administrators to manage TravelBharat content.
-
-### Dashboard
+## 🖥️ Admin Dashboard Architecture
 
 ```text
-┌──────────────────────────────────────────┐
-│              ADMIN DASHBOARD             │
-├───────────────┬───────────────┬──────────┤
-│ Destinations  │    States     │  Cities  │
-│     📍        │      🇮🇳       │    🏙️    │
-├───────────────┴───────────────┴──────────┤
-│                                          │
-│        CONTENT MANAGEMENT                │
-│                                          │
-├──────────────────────────────────────────┤
-│ Add Destination                          │
-│ Edit Destination                         │
-│ Delete Destination                       │
-│ Verify Destination                       │
-│ Feature Destination                      │
-└──────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────┐
+│ 🛡️ TRAVELBHARAT ADMIN DASHBOARD                                        │
+├───────────────────┬───────────────────┬────────────────────────────────┤
+│ 📍 Destinations   │ 🇮🇳 States & UTs   │ 🏙️ Cities & Regions            │
+│    Total: 120+    │    Total: 36      │    Total: 250+                  │
+├───────────────────┴───────────────────┴────────────────────────────────┤
+│ ⚡ QUICK ACTIONS                                                        │
+│ ➕ Add New Place   ✏️ Edit Content   🗑️ Archive   ✅ Verify   ⭐ Feature  │
+└────────────────────────────────────────────────────────────────────────┘
+
 ```
 
 ---
 
-# 🔐 Security
-
-The project architecture includes secure administrative access.
-
-Security considerations include:
-
-- Password hashing
-- Protected admin routes
-- Server-side validation
-- Environment variables
-- Secure API handling
-- Input validation
-- Authentication
-
----
-
-# 💻 Technology Stack
-
-<div align="center">
-
-### Frontend
-
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-
-### Backend
-
-![Node](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-
-### Database
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
-
-### Development
-
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-
-</div>
-
----
-
-# 🏗️ Architecture
+## 🔐 Security & Infrastructure Standards
 
 ```text
-                         TRAVELBHARAT
-                              │
-               ┌──────────────┼──────────────┐
-               │              │              │
-               ▼              ▼              ▼
-           FRONTEND        BACKEND        DATABASE
-               │              │              │
-               ▼              ▼              ▼
-           Next.js          APIs          PostgreSQL
-               │              │              │
-               ▼              ▼              ▼
-             React         Server          Prisma
-               │           Logic             │
-               └──────────────┼──────────────┘
-                              │
-                              ▼
-                       ADMIN DASHBOARD
+ 🔑 Argon2 / bcrypt   ──►  🛡️ Protected Admin Routes  ──►  🛡️ Server Validation (Zod)
+ 🌐 Env Encrypted     ──►  🔐 Secure API Endpoints   ──►  🧼 Input Sanitization
+
 ```
 
 ---
 
-# 📂 Repository Structure
+## 💻 Technology Stack
+
+### Frontend Ecosystem
+
+### Backend & Database
+
+### Developer Tooling & DevOps
+
+---
 
 ```text
 unified-mentor-internship/
 │
-├── 📁 travel-bharat/
-│   │
-│   ├── 📁 app/
-│   ├── 📁 components/
-│   ├── 📁 lib/
-│   ├── 📁 public/
-│   ├── 📁 prisma/
-│   ├── 📁 hooks/
-│   ├── 📁 types/
-│   │
+├── 📁 travel-bharat/              # Project 01 Root
+│   ├── 📁 app/                    # Next.js App Router (Pages & API Routes)
+│   │   ├── 📁 (public)/           # Public Travel Discovery Routes
+│   │   ├── 📁 admin/              # Secured Admin Dashboard
+│   │   └── 📁 api/                # REST API Endpoints
+│   ├── 📁 components/             # Modular UI Components
+│   │   ├── 📁 ui/                 # Reusable Primitive Components
+│   │   ├── 📁 cards/              # Destination & State Cards
+│   │   └── 📁 layout/             # Header, Footer, Navigation
+│   ├── 📁 lib/                    # Prisma client, Auth & Utility Helpers
+│   ├── 📁 prisma/                 # Database Schema & Migration Scripts
+│   ├── 📁 public/                 # Static Assets, SVGs & Images
+│   ├── 📁 hooks/                  # Custom React Hooks
+│   ├── 📁 types/                  # TypeScript Interfaces & Definitions
 │   ├── 📄 package.json
 │   ├── 📄 README.md
 │   └── 📄 .env.example
 │
-├── 📁 project-02/
-│
-├── 📁 project-03/
-│
-├── 📁 project-04/
-│
-└── 📄 README.md
+├── 📁 project-02/                 # Project 02 Workspace (Coming Soon)
+├── 📁 project-03/                 # Project 03 Workspace (Coming Soon)
+├── 📁 project-04/                 # Project 04 Workspace (Coming Soon)
+└── 📄 README.md                   # Root Overview Document
+
 ```
 
 ---
 
-# 📊 Project Development Roadmap
+### 🛠️ Phase Checklist
 
-### Phase 01 — Foundation
+* [x] **Phase 01 — Foundation Setup**
+* [x] Project initialization & Git configuration
+* [x] Folder structure & standard ESLint/Prettier rules
+* [x] Base styling setup with Tailwind CSS
 
-- [x] Project initialization
-- [x] Repository setup
-- [x] Git configuration
-- [x] Initial TravelBharat structure
 
-### Phase 02 — Product Architecture
+* [ ] **Phase 02 — Data & Architecture**
+* [ ] Schema modeling with Prisma ORM & PostgreSQL
+* [ ] API routes for State and Destination queries
+* [ ] Type-safe API contracts with Zod validation
 
-- [ ] Database schema
-- [ ] Data models
-- [ ] Component architecture
-- [ ] API architecture
 
-### Phase 03 — Public Experience
+* [ ] **Phase 03 — Public Experience**
+* [ ] Hero section with interactive search bar
+* [ ] State explorer grid with filter tags
+* [ ] Destination detail pages with lightbox gallery
+* [ ] Category-based filtering engine
 
-- [ ] Homepage
-- [ ] State explorer
-- [ ] Destination discovery
-- [ ] Search
-- [ ] Filters
-- [ ] Destination pages
-- [ ] Galleries
 
-### Phase 04 — Admin
+* [ ] **Phase 04 — Admin Portal & Security**
+* [ ] Secure authentication middleware
+* [ ] Dashboard CRUD interface for content managers
+* [ ] Asset upload pipeline & image compression
 
-- [ ] Admin authentication
-- [ ] Dashboard
-- [ ] Destination management
-- [ ] State management
-- [ ] City management
-- [ ] Content verification
 
-### Phase 05 — Polish
+* [ ] **Phase 05 — Polish & Optimization**
+* [ ] Page transition animations & skeleton loaders
+* [ ] Dynamic OpenGraph metadata for social sharing
+* [ ] Core Web Vitals optimization (Lighthouse 90+)
 
-- [ ] Animations
-- [ ] Responsive optimization
-- [ ] Accessibility
-- [ ] SEO
-- [ ] Performance optimization
-- [ ] Error handling
-- [ ] Loading states
 
-### Phase 06 — Deployment
+* [ ] **Phase 06 — Production Deployment**
+* [ ] Database deployment & automated migrations
+* [ ] Production build verification on Vercel
+* [ ] Final Quality Assurance (QA) pass
 
-- [ ] Production build
-- [ ] Environment configuration
-- [ ] Database deployment
-- [ ] Application deployment
-- [ ] Final QA
+
 
 ---
 
-# 🚀 Future Vision
-
-TravelBharat is designed with future expansion in mind.
-
-Potential future features:
+## 🔮 Future Vision & Expansion
 
 ```text
-                  TRAVELBHARAT
-                       │
-       ┌───────────────┼────────────────┐
-       ▼               ▼                ▼
-  🗺️ Maps         🧳 Itineraries    🌐 Languages
-       │               │                │
-       ▼               ▼                ▼
-  📱 Mobile       🏨 Hotels        🚆 Transport
-       │               │                │
-       └───────────────┼────────────────┘
-                       ▼
-                COMPLETE TRAVEL
-                   ECOSYSTEM
-```
+                                  🌐 TRAVELBHARAT
+                                         │
+                 ┌───────────────────────┼───────────────────────┐
+                 ▼                       ▼                       ▼
+          🗺️ Live Maps              🧳 AI Itineraries        🌐 Multilingual
+          Mapbox / Leaflet           AI Travel Assistant      Hindi & Local Languages
+                 │                       │                       │
+                 └───────────────────────┼───────────────────────┘
+                                         ▼
+                            🚀 Full Travel Ecosystem
 
-Future possibilities include:
-
-- 🗺️ Advanced map exploration
-- 🧳 AI-assisted itinerary planning
-- 🌐 Hindi and regional languages
-- 🏨 Hotel integrations
-- 🚆 Transport integrations
-- ❤️ Saved destinations
-- ⭐ User reviews
-- 👤 User accounts
-- 🤖 AI travel assistant
-
----
-
-# 📈 Performance Goals
-
-The application is being developed with performance in mind.
-
-### Targets
-
-- ⚡ Fast page loading
-- 🖼️ Optimized images
-- 📦 Efficient bundles
-- 🔄 Lazy loading
-- 🧠 Server-side rendering where appropriate
-- 📱 Responsive performance
-- 🔍 SEO optimization
-- ♿ Accessibility
-
----
-
-# 🎓 Internship Learning Goals
-
-Through this project, I am developing practical experience in:
-
-```text
-Frontend Development
-        ↓
-React & Next.js
-        ↓
-TypeScript
-        ↓
-UI/UX
-        ↓
-Backend Development
-        ↓
-Database Design
-        ↓
-Authentication
-        ↓
-API Architecture
-        ↓
-SEO & Performance
-        ↓
-Git & GitHub
-        ↓
-Deployment
 ```
 
 ---
 
-# 🧪 Quality Checklist
+### 📱 User Experience (UX)
 
-The goal is not just to make the application work.
+* [ ] Intuitive touch targets for mobile devices
+* [ ] Clear error boundaries and fallback states
+* [ ] Keyboard accessible modal dialogs and navigations
 
-The goal is to make it **feel complete**.
+### 🎨 User Interface (UI)
 
-### UX
+* [ ] Accessible color contrast (WCAG AAA compliant)
+* [ ] Fluid typography scaling across breakpoints
+* [ ] Polished hover and focus indicator states
 
-- [ ] Clear navigation
-- [ ] Intuitive discovery
-- [ ] Mobile-friendly interactions
-- [ ] Accessible components
+### ⚙️ Code Quality & Architecture
 
-### UI
+* [ ] Zero TypeScript `any` types allowed
+* [ ] Modular design system patterns
+* [ ] Strict server-side route guards
 
-- [ ] Consistent design system
-- [ ] Premium typography
-- [ ] Strong visual hierarchy
-- [ ] Smooth transitions
-- [ ] Meaningful animations
+### ⚡ Performance Benchmarks
 
-### Engineering
-
-- [ ] Clean TypeScript
-- [ ] Reusable components
-- [ ] Scalable architecture
-- [ ] Secure authentication
-- [ ] Validated inputs
-
-### Performance
-
-- [ ] Optimized images
-- [ ] Lazy loading
-- [ ] Efficient rendering
-- [ ] Minimal unnecessary JavaScript
+* [ ] Next.js optimized `<Image />` component usage
+* [ ] Dynamic imports for heavy UI components
+* [ ] Edge caching for static discovery pages
 
 ---
 
-# 🌟 Project Philosophy
+## 💬 Project Philosophy
 
-> ### "Don't just build software. Build experiences."
+> *"Don't just build software. Build unforgettable digital experiences."*
 
-TravelBharat is more than a tourism listing application.
+### 👨‍💻 Developer Spotlight
 
-It is an attempt to create a digital experience that helps people discover the diversity, history, culture, landscapes, and stories of India.
+**Full-Stack Developer • Student • Builder**
 
----
-
-# 👨‍💻 Developer
-
-<div align="center">
-
-## Atharv Deshmukh
-
-### Full-Stack Developer • Student • Builder
-
-Building. Learning. Improving. 🚀
-
-</div>
+*Building software with intent, craftsmanship, and attention to detail.* 🚀
 
 ---
 
-# 🏢 Internship
+### 🏢 Internship Sponsor
 
-<div align="center">
+**Unified Mentor** — *Six-Month Virtual Software Engineering Internship*
 
-### Unified Mentor
-
-**Six-Month Virtual Internship**
-
-📚 Learn → 🛠️ Build → 🧪 Test → 🚀 Ship
-
-</div>
+`📚 Learn` → `🛠️ Build` → `🧪 Test` → `🚀 Ship`
 
 ---
 
-# 📌 Current Status
-
-<div align="center">
-
-### 🇮🇳 TRAVELBHARAT
-
-**PROJECT 01**
-
-🟢 **ACTIVE DEVELOPMENT**
-
-<br/>
-
-`Building the future of Indian travel discovery.`
-
-</div>
-
----
-
-<div align="center">
-
-### ⭐ More projects coming soon...
-
-**Project 02 → Project 03 → Project 04**
-
-<br/>
-
----
-
-### 🇮🇳 Made with passion while exploring India through code.
+### 🇮🇳 Crafted with passion while exploring India through code.
 
 **TravelBharat • Unified Mentor Internship**
-
-</div>
