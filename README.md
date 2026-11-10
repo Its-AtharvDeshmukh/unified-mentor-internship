@@ -5,7 +5,7 @@
 ### 🇮🇳 Building Real-World Digital Experiences
 
 <p>
-  <strong>A six-month journey of building, learning, experimenting, and shipping.</strong>
+  <strong>A Six-Month journey of building, learning, experimenting, and shipping.</strong>
 </p>
 
 <br/>
