@@ -1,4 +1,3 @@
-```markdown
 <div align="center">
 
 <!-- Animated Header Banner -->
@@ -30,6 +29,45 @@
 
 </div>
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-db03ce80-a525-11eb-88a6-977258c2d490.gif" width="100%" />
+
+## ✨ Welcome to My Internship Journey
+
+This repository houses the suite of production-grade digital products developed during my **6-Month Virtual Engineering Internship at Unified Mentor**.
+
+> 🎯 **Core Mandate:** *Learn by building real-world, high-impact software products.*
+
+Rather than constructing isolated mini-apps or tutorial clones, this program emphasizes building end-to-end scalable platforms encompassing:
+
+| Area | Focus Highlights |
+| :--- | :--- |
+| 🎨 **Product & UI/UX Design** | Design systems, accessibility (a11y), responsive layouts, motion UI |
+| 💻 **Frontend Engineering** | Next.js App Router, SSR/SSG, TypeScript, state management |
+| ⚙️ **Backend & APIs** | RESTful endpoints, serverless functions, middleware, validation |
+| 🗄️ **Database Architecture** | Relational schemas, Prisma ORM, migrations, query optimization |
+| 🔐 **Security & Auth** | Hashed credentials, session tokens, role-based access control (RBAC) |
+| ⚡ **Performance & SEO** | Core Web Vitals, dynamic meta tags, automated sitemaps, lazy loading |
+
+---
+
+## 🗺️ Internship Roadmap
+
+```text
+                       💼 UNIFIED MENTOR INTERNSHIP
+                                   │
+                                   ▼
+                       ┌───────────────────────┐
+                       │   6-MONTH EXPEDITION  │
+                       └───────────┬───────────┘
+                                   │
+         ┌─────────────────────────┼─────────────────────────┐
+         ▼                         ▼                         ▼
+  📦 PROJECT 01             🚀 PROJECT 02             🔮 PROJECT 03
+  TravelBharat               Coming Soon               Coming Soon
+         │
+         ▼
+  🔮 PROJECT 04
+   Coming Soon
 <img src="https://user-images.githubusercontent.com/73097560/115834477-db03ce80-a525-11eb-88a6-977258c2d490.gif" width="100%" />
 
 ## ✨ Welcome to My Internship Journey
